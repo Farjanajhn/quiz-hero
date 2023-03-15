@@ -41,4 +41,15 @@
     would do some simple math to find the exact time of the function and would
     set the innerText of the CountHtml element.
   </p>
+  <h1>The function of chooseQuiz?</h1>
+  <p>
+    chooseQuiz() is a function what would take index and givenAns as parameter.
+    it would create a variable isExist where find() would go through an array
+    answers to find the element where ans.id equal to quizData[index].id. If
+    isExist is true it would execute the a loop through answer to find each
+    quiz.If isExist.id qual to quiz.id it would stop the function and splice the
+    answers array. Else quizData[index] and givenAnswer would push to the
+    answers array. Finally, it would call the function displayAnswers(answers)
+    to display answer in Ui.
+  </p>
 </html>
