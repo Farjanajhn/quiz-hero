@@ -111,7 +111,7 @@ document.querySelector("#submit").addEventListener("click", () => {
 
   // data setting on local storage and getting data from local storage
   let storage = JSON.parse(localStorage.getItem("results"));
-  console.log(114, storage);
+
   if (storage) {
     localStorage.setItem(
       "results",
@@ -176,7 +176,8 @@ document.querySelector("#submit").addEventListener("click", () => {
       <div>${item.examTime}</div>
       </div>`
       )
-      ?.join("")}`
+      ?.join("")}
+      `
       : ""
   }
   </div>
